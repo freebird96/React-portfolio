@@ -2,6 +2,10 @@
   "name": "myportfoliosite",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.2.0",
+    "node": "10.9.0"
+  },
   "homepage": "https://freebird96.github.io/portfolio",
   "dependencies": {
     "gh-pages": "^2.0.1",

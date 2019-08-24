@@ -4,56 +4,76 @@
   background: linear-gradient(to right,rgb(0, 0, 0), rgb(134, 136, 135) ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+
+/* ----------------------------------------------------------------------- */
 /*Landing Page*/
+/* ----------------------------------------------------------------------- */
+
+/* style = {{width: '100%', margin:'0', height: '91.5vh', overflow:'hidden'}} */
+.landing-page{
+  width: auto;
+  margin: 0;
+  height: 100%;
+}
 
 .landing-grid {
-  background: white;  /* fallback for old browsers */
-  
-
+  background: url('./images/sitebg2.jpg');  /* fallback for old browsers */
   text-align: center;
-  position: relative;
-  top: 0;
-  left: 0;
+  position: relative; 
   width: 100%;
   height: 100%;
-
+  /* box-sizing: border-box; */
+  
 }
 .landing-right-col{
   background: black;
   padding: 2em;
   border-radius: 15px;
+  
 }
 
 .banner-text {
   background-color: black;
-  opacity: .8;
-  width: 75%;
+  opacity: .5;
+  width: 65%;
   margin: auto;
   border-radius: 10px;
 }
 
-
-
 .intro{
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
- .intro p{
-  font-size: 30px;
-  padding-top: 100px;
-  padding-left: 40px;
+
+ .intro-text{
+   line-height: 3rem;
+  color: white;
+  padding-left: 3%;
+  font-size: 2rem;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
 }
 
-.projects-grid {
+
+.social-links {
   display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.social-links i{
+  color: white;
+  font-size: 5em;
+  padding-top: 0;
 }
 
 
-
+/* -------------------------------------------------------------- */
 /*Resume Page*/
+/* -------------------------------------------------------------- */
 .resume-right-col{
   background: #27221F; 
   color: white;
@@ -61,24 +81,60 @@
   border-radius: 15px;
 }
 
-/*contact page*/
+.summary{
+  
+  text-align: justify;
+  text-indent: 30px;
+}
+
+.summary a{
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+/* style={{borderTop: '5px solid #833fb2', width: '50%', padding:'0 25% 0 25%'}} */
+.line{
+  border-top: 5px solid #833fb2;
+  width: 50%;
+  padding: 0 25%;
+  border-radius:50%;
+}
+
+.line-exp{
+  border-color: #e22947;
+}
+
+.profile-img{
+  text-align: center;  
+}
+
+/* SKILLS PAGE */
+
+.skills-progressbar{
+  margin: auto;
+  width: 100%;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------ */
+/*CONTACTS PAGE*/
+/* --------------------------------------------------------------------------------- */
 
 .contact-body{
   margin:auto;
   background: grey;
-  position: fixed;
   width: 100%;
-  height: 100%;
+  height: auto;
   justify-content: center;
-  padding-top: 2em;
-
+  padding: 5rem 0;
 }
 
 .contact-grid{
   text-align: center;
   justify-content: center;
   width: 80%;
-  height: 550px;
   background: white;
   color: black;
   border: 2px solid red;
@@ -132,21 +188,200 @@
   padding: 0em;
 }
 
-.social-links {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  margin: auto;
-}
-
-.social-links i{
-  color: white;
-  font-size: 5em;
-  padding-top: 0;
-}
-
 .cardActions{
   float: right;
 }
 
+/* -------------------------------------------------------------------------------- */
+/* Projects Page */
+/* --------------------------------------------------------------------------------- */
+/* shadow={5} style={{minWidth: '450', margin: 'auto'}} */
 
+/* HTML-CSS Page */
+.projects-grid{
+  align-items: center;
+  justify-content: center;
+  background: url('./images/buildings.jpg');
+  background-size: cover repeat;
+  height: 100% ;
+  width: 100%;
+}
+
+.project-card{
+  width: 4px;
+  margin: 30px auto;
+  border: 1px solid black;
+  height: 400px;
+}
+
+.project-card h4{
+  text-align: center;
+  width: 90%;
+  border-radius: 10px;
+  margin: 0px auto;
+  padding: 10px;
+  background-color: lightgrey;
+  text-transform: capitalize;
+}
+
+.card-title{
+  margin: 0;
+  padding: 0;
+  align-content: center;
+}
+
+.card-title-img{
+  /* color: white; */
+  height: 100px;
+  width: auto;
+  margin: 20px auto;
+}
+
+.project-cardActions{
+  text-align: center;
+  /* max-height: 10px; */
+  margin: 0;
+  padding: 0;
+}
+
+
+.project-cardDesc{
+  margin: 0;
+  padding: 0;
+}
+
+.project-cardDesc p{
+  margin: 0;
+  padding:0;
+  text-indent: 30px;
+  color: black;
+  text-align: justify;
+  height: 130px;
+  overflow-y: scroll !important;
+  /* background-color: rgb(144, 223, 233); */
+}
+.project-cardDesc p::-webkit-scrollbar { 
+  width: 0 !important;
+}
+
+
+/*  JAVASCRIP PAGE */
+.projects-grid-js{
+  align-items: center;
+  justify-content: center;
+  background: url('./images/buildings.jpg');
+  background-size: cover repeat;
+  height: auto;
+  width: 100%;
+}
+
+
+
+/* -------------------------------------------------------- */
+/* MEDIA QUERIES */
+/* -------------------------------------------------------- */
+
+@media screen and (max-width: 450px){
+
+  .menu-drawer{
+    color: white !important;
+  }
+
+  .landing-grid{
+    background: url('./images/sitebg.jpg');
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width:auto;
+  }
+
+  .intro{
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro-text{
+    margin-top: 2rem;
+  }
+
+  .banner-text{
+    width: 90%;
+    margin: 2.5rem auto;
+    padding-top: 1rem;
+  }
+
+  .banner-heading h1{
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  .banner-heading p{
+    font-size: 1.5rem;
+    margin: 0 1.5rem 1rem 1.5rem;
+  }
+
+  .social-links i{
+    font-size: 2rem;
+  }
+
+  .profile-img{
+    margin-top: 5rem;
+  }
+
+  .summary a{
+    text-decoration: none;
+    text-align: center;
+    margin-left: 30px;
+  }
+
+  .address{
+    display: none;
+  }
+
+  .add-details{
+    padding: 0 30px 30px 20px;
+    text-align: justify;
+  }
+
+  .resume-right-col h2{
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;    
+  }
+
+  .education-left-col{
+    margin: 0;
+    padding: 0;
+    order: 2;
+  }
+
+  .education-right-col{
+    order: 1;
+    margin: 0;
+    padding: 0;
+  }
+
+  .education-details h4{
+    margin: 0;
+    padding:0;
+  }
+
+  .education-year {
+    margin: 0;
+    padding: -60px;
+  }
+
+  
+
+  .projects-grid-js{
+    height: auto;
+  }
+  
+
+  .contact-grid h2{
+    font-size: 2rem;
+  }
+
+
+}
