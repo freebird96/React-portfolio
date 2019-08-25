@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import LandingPage from './components/landingpage';
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 import Scroll from 'react-scroll';
@@ -44,6 +45,7 @@ class App extends Component {
                     <Main/>
                 </Content>
             </Layout>
+            <LandingPage/>
         </div>  
     );
   }
