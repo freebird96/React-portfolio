@@ -7,6 +7,7 @@ import Skills from './skills';
 class Resume extends Component {
     render() {
         return(
+            <React.Fragment>
                 <Grid>
                     <Cell col={4}>
                         <div className="profile-img">
@@ -133,6 +134,7 @@ class Resume extends Component {
                         />
                     </Cell>
                 </Grid>
+            </React.Fragment>
         )
     }
 }
