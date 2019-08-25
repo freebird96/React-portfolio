@@ -6,19 +6,21 @@ class Contact extends Component {
         return(
             <div className="contact-body">
                 <Grid className="contact-grid">
-                    <Cell col={6}>
-                        <h2>Noble K  Varghese</h2>
-                        <img
-                            src="https://www.drupal.org/files/user-pictures/picture-2204516-1469808304.png"
-                            alt="specs guy"
-                            style={{height:'250px'}}
-                        />
+                    <Cell className="contact-grid-left" col={6}>
+                        <div>
+                            <h2>Noble K  Varghese</h2>
+                            <img
+                                src="https://www.drupal.org/files/user-pictures/picture-2204516-1469808304.png"
+                                alt="specs guy"
+                                style={{height:'250px'}}
+                            />
 
-                        <p style={{width:'75%', margin:'auto', paddingTop: '1em'}}>
-                        Final year B-tech student and an aspiring web developer / data scientist offering enthusiasm and understanding of various programming languages. Looking to join organization where opportunity for growth and professional development is embraced. 
-                        </p>
+                            <p style={{width:'75%', margin:'auto', paddingTop: '1em'}}>
+                            I am an engineering graduate (7.94 GPA, B-tech in Industrial Engineering) from College of Engineering Trivandrum. I am a self-taught programmer, web developer and a data enthusiast. Throughout my academic career, I was highly passionate about tech and the associated fields and hence spent a great deal of time learning and understanding them. I have worked on several projects that extensively used HTML5/CSS3, JavaScript MVC (ES6) and ReactJS. These passion projects enabled me to write cleaner, efficient and modular codes while leveraging SASS/SCSS as well. I have a strong hold on the aforementioned topics and also have working knowledge and understanding of REST APIs, Redux, Firebase and NodeJS. While working on academic and extracurricular projects, I have also developed analytical skills, problem solving ability and multitasking skills, which I hope to leverage into the Frontend Developer role at your company.  
+                            </p>
+                        </div>                        
                     </Cell>
-                    <Cell col={6}>
+                    <Cell className="contact-grid-right" col={6}>
                         <h2>Contact Me</h2>
                         <hr/>
                         <div className="contact-list">
@@ -52,8 +54,7 @@ class Contact extends Component {
                                 </ListItem>
                                 
                             </List>
-                        </div>
-                        
+                        </div>                        
                     </Cell>
                 </Grid>
             </div>
