@@ -4,9 +4,9 @@
   "private": true,
   "engines": {
     "node": "10.9.0",
-    "npm": "6.2.0"    
+    "npm": "6.2.0"
   },
-  "homepage": "https://freebird96.github.io/react-portfolio",
+  "homepage": "https://freebird96.github.io/My-portfolio_site",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.6.3",
@@ -21,8 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
